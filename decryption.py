@@ -110,6 +110,8 @@ def rsa(min_p, min_q, min_e):
 	
 	# Sets d to the multiplicative inverse of e with respect to phi.
 	d = extended_euclid(e, phi)
+
+	print("The public key is :", e, n)
 	
 	return (d, e, n)
 
